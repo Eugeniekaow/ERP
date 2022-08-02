@@ -1,13 +1,11 @@
 """
-==== 1. =====
-請參考 73-tkinter-label-2文字擺放place.py
 
 使用tkinter 建立
 一個視窗
 上面顯示label
 產品的資料
 """
-"""
+
 import tkinter as tk # 在Python 3.x 匯入該tkinter 函式庫
 win = tk.Tk()        # 步驟2：建立GUI 應用程式的主視窗
 win.wm_title("主視窗標題")                  #設定主視窗
@@ -22,7 +20,7 @@ label14=tk.Label(win,text="價錢:350")         #建立文件
 label14.place(x=60,y=120)                    #指定元件位置
 
 win.mainloop()       # 最後步驟：程式做無限循環
-"""
+
 """
 ==== 2. ======
 
@@ -33,7 +31,7 @@ win.mainloop()       # 最後步驟：程式做無限循環
 
 產品的相關資料
 """
-"""
+
 class commodityItem(object):  # 繼承Python 最上層的object 類別
    commodityName = "上衣"
    commodityMaterial = "雪紡"
@@ -75,16 +73,10 @@ commodityItem1=commodityItem(Name="上衣",Material="雪紡",Size="F",Clotheslen
                              Cost=200,Pricing=350,Quantity=10)
 commodityItem1.info()
 
-"""
 
-"""
-==== 3. ======
-請參考
-65-class-properties.py
 
-把第一題的Label 上的文字
-改成讀取 class properties
-"""
+
+
 from PIL import ImageTk, Image
 import tkinter as tk # 在Python 3.x 匯入該tkinter 函式庫
 
@@ -175,7 +167,7 @@ label21.place(x=50,y=280)                      #指定元件位置
 
 
 
-"""
+
 label1 =tk.Label(win,text="產品",font=("Helvetica", 16),fg="#ffaa64",bg='#fff5a5')  # 建立文字
 label1.place(x=20, y=0)
 
@@ -189,4 +181,3 @@ label3.place(x=20, y=100)                 # 指定元件位置 x=20, y=100 的�
 
 win.mainloop()       # 最後步驟：程式做無限循環
 
-"""
